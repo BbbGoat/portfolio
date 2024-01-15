@@ -9,6 +9,11 @@ const Header = () => {
 
   const category = ['About', 'Portfolio', 'Skills']
   
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    
+  }
+  
   return (
     <>
       <header className={styles.header}>
@@ -31,7 +36,7 @@ const Header = () => {
                   })
                 }
               </ul>
-              <a className={styles.menu_trigger} href="#">
+              <a className={`${styles.menu_trigger} ${styles.active}`} href="#" onClick={(e)=>{handleClick(e)}}>
                 <span></span>
                 <span></span>
                 <span></span>
