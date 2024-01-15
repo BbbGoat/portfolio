@@ -3,7 +3,7 @@
 
     .wrap {
         width: 100%;
-        height: 68px;
+        height: 120px;
         padding: 0 3rem;
 
         .inner {
@@ -30,12 +30,15 @@
             .text_box {
                 font-size: 1.4rem;
                 font-weight: 600;
+
                 p {
                     margin-bottom: 20px;
                 }
                 span {
                     vertical-align: top;
                     line-height: 20px;
+                    font-weight: 400;
+                    cursor: pointer;
                 }
             }
         }
