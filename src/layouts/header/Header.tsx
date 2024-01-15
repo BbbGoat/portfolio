@@ -31,6 +31,11 @@ const Header = () => {
                   })
                 }
               </ul>
+              <a className={styles.menu_trigger} href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ function App() {
           <Route path='/portfolio' element={ <Portfolio /> } />
           <Route path='/portfolio/:id' element={ <Details /> } />
           <Route path='/skills' element={ <Skills /> } />
-          <Route path='*' element={<div>404! 없는 페이지임</div>} />
+          <Route path='*' element={<div>404! 없는 페이지입니다 ^0^</div>} />
         </Routes>
       </Suspense>
     </main>
