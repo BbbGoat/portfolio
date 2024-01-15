@@ -1,11 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './(home)/Home';
 
 function App() {
   return (
     <div className="App">
-      개발합니다..
+      <Suspense fallback={ <div>로딩중</div> } >
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<div>어바웃</div>} />
+          <Route path='*' element={<div>404! 없는 페이지임</div>} />
+        </Routes>
+      </Suspense>
     </div>
   );
 }
