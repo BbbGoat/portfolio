@@ -14,9 +14,12 @@
 
             .left {
                 display: flex;
+                gap: 20px;
             }
             .right {
                 display: flex;
+                gap: 20px;
+                text-align: right;
 
                 .text_box {
                     span {

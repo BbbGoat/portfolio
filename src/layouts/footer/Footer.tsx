@@ -11,8 +11,8 @@ const Footer = () => {
           <div className={styles.inner}>
             <div className={styles.left}>
               <div className={styles.text_box}>
-                <p>엥</p>
-                <span>우에엥</span>
+                <p>Welcome.</p>
+                <span>포트폴리오 아카이브</span>
               </div>
               <div className={styles.text_box}>
                 <p>Mail.</p>
