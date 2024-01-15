@@ -1,0 +1,40 @@
+.footer {
+    background-color: transparent;
+
+    .wrap {
+        width: 100%;
+        height: 68px;
+        padding: 0 3rem;
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .left {
+                display: flex;
+            }
+            .right {
+                display: flex;
+
+                .text_box {
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .text_box {
+                font-size: 1.4rem;
+                font-weight: 600;
+                p {
+                    margin-bottom: 20px;
+                }
+                span {
+                    vertical-align: top;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

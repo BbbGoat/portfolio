@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  border: none;
+  vertical-align: top;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
