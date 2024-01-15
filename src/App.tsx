@@ -10,6 +10,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<div>어바웃</div>} />
+          <Route path='/portfolio' element={<div>포트폴리오</div>} />
+          <Route path='/portfolio/:id' element={<div>포트폴리오123</div>} />
+          <Route path='/skills' element={<div>스킬</div>} />
           <Route path='*' element={<div>404! 없는 페이지임</div>} />
         </Routes>
       </Suspense>
