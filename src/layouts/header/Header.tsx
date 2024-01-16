@@ -14,7 +14,6 @@ const Header = () => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setActive(!active)
-    console.log(active);
   }
   
   return (
@@ -23,7 +22,9 @@ const Header = () => {
         <div className={styles.wrap}>
           <div className={styles.inner}>
             <div className={styles.logo}>
-              <h1>BBBGOAT</h1>
+              <Link to={'/'}>
+                <h1>BBBGOAT</h1>
+              </Link>
             </div>
             <div className={styles.category}>
               <ul className={styles.pc_list}>

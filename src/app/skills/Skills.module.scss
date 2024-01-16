@@ -1,3 +1,15 @@
 .skills {
-    padding: 0 3rem;
+    padding: 68px 3rem 0;
+    height: 1200px;
+    background-color: #fff;
+}
+
+
+
+@import '../../styles/mixin';
+
+@include mobile {
+    .skills {
+        padding: 68px 2rem 0;
+    }
 }

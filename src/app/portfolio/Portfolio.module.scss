@@ -1,5 +1,14 @@
 .portfolio {
-    padding: 0 3rem;
+    padding: 68px 3rem 0;
     height: 700px;
     background-color: #fff;
+}
+
+
+@import '../../styles/mixin';
+
+@include mobile {
+    .portfolio {
+        padding: 68px 2rem 0;
+    }
 }

@@ -44,3 +44,38 @@
         }
     }
 }
+
+
+@import '../../styles/mixin';
+
+@include mobile {
+    .footer {
+        .wrap {
+            height: 100px;
+            padding: 0 2rem;
+
+            .inner {
+                .left {
+                    flex-direction: column;
+                    gap: 10px;
+
+                }
+                .right {
+                    flex-direction: column;
+                    gap: 10px;
+                    
+                }
+                .text_box {
+                    font-size: 1rem;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                    svg {
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

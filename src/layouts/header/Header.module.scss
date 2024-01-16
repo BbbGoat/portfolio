@@ -101,7 +101,7 @@
         transition: opacity .3s;
 
         li {
-            padding: 7vw 3rem;
+            padding: 7vw 2rem;
             font-size: 6vw;
             font-weight: 500;
             border-bottom: 1px solid #000;
@@ -123,9 +123,9 @@
 
 @include mobile {
     .header {
-        
-
         .wrap {
+            padding: 0 2rem;
+
             .inner {
                 .logo {
                     font-size: 0.8rem;

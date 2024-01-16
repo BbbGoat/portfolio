@@ -1,18 +1,13 @@
-.about {
+.home {
     padding: 68px 3rem 0;
-    // 임시
-    height: 600px;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    height: 100vh;
 }
-
-
-
 
 @import '../../styles/mixin';
 
 @include mobile {
-    .about {
+    .home {
         padding: 68px 2rem 0;
     }
 }
