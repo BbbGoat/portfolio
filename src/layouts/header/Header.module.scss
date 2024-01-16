@@ -1,4 +1,5 @@
 .header {
+    mix-blend-mode: difference;
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,6 +19,7 @@
     
             .logo {
                 font-size: 1.2rem;
+                color: #fff;
             }
             .category {
                 .pc_list {
@@ -32,10 +34,11 @@
                         height: 26px;
                         font-size: 1.8rem;
                         font-weight: 600;
+                        color: #fff;
                     }
                     li.active {
-                        background-color: #000;
-                        color: #fff;
+                        background-color: #fff;
+                        color: #000;
                     }
                 }
                 .menu_trigger {
@@ -53,7 +56,7 @@
                         left: 0;
                         width: 100%;
                         height: 2px;
-                        background-color: #000000;
+                        background: #fff;
                         border-radius: 4px;
                         transition: all .4s;
                     }
@@ -120,7 +123,7 @@
 
 @include mobile {
     .header {
-        transition: background-color .3s;
+        
 
         .wrap {
             .inner {
@@ -146,6 +149,24 @@
         }
     }
     .header.active {
+        mix-blend-mode: normal;
         background-color: rgb(255, 255, 255);
+        transition: background-color .3s;
+
+        .wrap {
+            .inner {
+                .logo {
+                    color: #000;
+                }
+                .category {
+                    .menu_trigger {
+                        span {
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
