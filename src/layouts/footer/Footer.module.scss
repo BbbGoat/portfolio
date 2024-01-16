@@ -1,6 +1,9 @@
 .footer {
-    position: relative;
+    mix-blend-mode: difference;
+    position: absolute;
+    width: 100%;
     z-index: 2;
+    transform: translateY(-100%);
     background-color: transparent;
 
     .wrap {
@@ -23,13 +26,14 @@
                 gap: 20px;
                 text-align: right;
 
-                .text_box {
+                .text_box {                    
                     span {
                         margin-left: 10px;
                     }
                 }
             }
             .text_box {
+                color: #fff;
                 font-size: 1.4rem;
                 font-weight: 600;
 

@@ -25,15 +25,19 @@ const Footer = () => {
               <div className={styles.text_box}>
                 <p>Github.</p>
                 <div>
-                  <AiFillGithub size={20} />
-                  <span>BbbGoat</span>
+                  <a href="https://github.com/BbbGoat" target="_blank">
+                    <AiFillGithub size={20} />
+                    <span>BbbGoat</span>
+                  </a>
                 </div>
               </div>
               <div className={styles.text_box}>
                 <p>Velog.</p>
                 <div>
-                  <SiVelog size={20} />
-                  <span>BbbGoat</span>
+                  <a href="https://velog.io/@bbbgoat/posts" target="_blank">
+                    <SiVelog size={20} />
+                    <span>BbbGoat</span>
+                  </a>
                 </div>
               </div>
             </div>
