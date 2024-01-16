@@ -4,6 +4,8 @@ import styles from './Header.module.scss'
 
 const Header = () => {
 
+  const [active, setActive] = useState(false);
+  
   const { pathname } = useLocation();
   const path = pathname.slice(1);
 
@@ -11,7 +13,8 @@ const Header = () => {
   
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    
+    setActive(!active)
+    console.log(active);
   }
   
   return (
@@ -36,7 +39,8 @@ const Header = () => {
                   })
                 }
               </ul>
-              <a className={`${styles.menu_trigger} ${styles.active}`} href="#" onClick={(e)=>{handleClick(e)}}>
+              <a className={active ? `${styles.menu_trigger} ${styles.active}` : styles.menu_trigger} href="#" 
+                onClick={(e)=>{handleClick(e)}}>
                 <span></span>
                 <span></span>
                 <span></span>

@@ -38,13 +38,13 @@
                     }
                 }
                 .menu_trigger {
+                    display: none;
                     // margin-right: 70px;
                     // margin-bottom: 50px;
                     
                     position: relative;
                     width: 40px;
                     height: 30px;
-                    display: inline-block;
                     transition: all .4s;
                     
                     span {
@@ -92,7 +92,19 @@
 @import '../../styles/mixin';
 
 @include mobile {
-    .category {
-        display: none;
+    .header {
+        .wrap {
+            .inner {
+                .category {
+                    ul {
+                        display: none;
+                    }
+            
+                    .menu_trigger {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
     }
 }
