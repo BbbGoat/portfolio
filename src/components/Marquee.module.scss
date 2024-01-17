@@ -1,9 +1,11 @@
 .marquee {
     position: relative;
     overflow: hidden;
-    $offset: 20vw;
-    --move-initial: calc(-25% + #{$offset});
-    --move-final: calc(-50% + #{$offset});
+    // $offset: 20vw;
+    --move-initial: -25%;
+    --move-final: -50%;
+    // --move-initial: calc(-25% + #{$offset});
+    // --move-final: calc(-50% + #{$offset});
     
     .marquee_inner {
         position: relative;
@@ -18,7 +20,7 @@
             display: flex;
             align-items: center;
             // height: 6.5vw;
-            opacity: 1;
+            opacity: 0;
             white-space: nowrap;
             overflow: visible;
             
