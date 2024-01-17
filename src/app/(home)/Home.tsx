@@ -24,14 +24,41 @@ export default function Home() {
             <div className={styles.wrapper}>
 
               <div className={styles.circle}>
-                <div className={styles.circle_inner}></div>
+                <div className={styles.circle_inner}>
+                  <a className={styles.text_box} href="#">
+                    <span className={styles.top_txt}>(text)</span>
+                    <span className={styles.bottom_txt}>think</span>
+                  </a>
+                </div>
               </div>
+              
               <div className={styles.circle}>
-                <div className={styles.circle_inner}></div>
+                <div className={styles.circle_inner}>
+                  <a className={styles.text_box} href="#">
+                    <span className={styles.top_txt}>(text)</span>
+                    <span className={styles.bottom_txt}>think</span>
+                  </a>
+                </div>
               </div>
+              
               <div className={styles.circle}>
-                <div className={styles.circle_inner}></div>
+                <div className={styles.circle_inner}>
+                  <a className={styles.text_box} href="#">
+                    <span className={styles.top_txt}>(text)</span>
+                    <span className={styles.bottom_txt}>think</span>
+                  </a>
+                </div>
               </div>
+
+              <div className={styles.circle}>
+                <div className={styles.circle_inner}>
+                  <a className={styles.text_box} href="#">
+                    <span className={styles.top_txt}>(text)</span>
+                    <span className={styles.bottom_txt}>think</span>
+                  </a>
+                </div>
+              </div>
+              
 
             </div>
           </div>
