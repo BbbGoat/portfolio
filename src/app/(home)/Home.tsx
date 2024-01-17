@@ -15,7 +15,9 @@ export default function Home() {
         {/* 컨텐츠 섹션 */}
         
         <div className={styles.content}>
-          <div className={styles.linear}>Welcome to My Porfolio Site</div>
+          <div className={styles.linear}>
+            
+          </div>
           
           <div className={styles.circle_box}>
             <div className={styles.wrapper}>
