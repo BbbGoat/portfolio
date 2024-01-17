@@ -13,6 +13,14 @@ const Marquee = () => {
                 <h4>Welcome to My Porfolio Site</h4>
                 {" "}
               </div>
+              <div className={styles.marquee_item}>
+                <h4>Welcome to My Porfolio Site</h4>
+                {" "}
+              </div>
+              <div className={styles.marquee_item}>
+                <h4>Welcome to My Porfolio Site</h4>
+                {" "}
+              </div>
             </div>
     </div>
   )

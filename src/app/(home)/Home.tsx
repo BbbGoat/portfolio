@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Home.module.scss'
+import Marquee from '../../components/Marquee'
 
 export default function Home() {
   return (
@@ -9,14 +10,14 @@ export default function Home() {
         {/* 비디오 섹션 */}
         <div className={`${styles.bg} ${styles.circle}`}>
           <div className={styles.video}>
-            <video src="/images/project_1.mp4" autoPlay loop muted></video>
+            <video src="/images/project_1.mp4" loop muted></video>
           </div>
         </div>
         {/* 컨텐츠 섹션 */}
         
         <div className={styles.content}>
           <div className={styles.linear}>
-            
+            <Marquee />
           </div>
           
           <div className={styles.circle_box}>
