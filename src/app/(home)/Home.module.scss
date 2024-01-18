@@ -49,7 +49,7 @@
                     width: 28.5vh;
                     background: #000;
                     border-radius: 100%;
-                    margin: 0 -4vh;
+                    margin: 0 -3vh;
                     transition: all .2s;
                     overflow: hidden;
                     cursor: pointer;
@@ -74,14 +74,15 @@
                             color: #fff;
                             
                             .top_txt {
-                                font-size: 3vh;
+                                font-size: 2vh;
                                 letter-spacing: -.11vh;
                                 line-height: 1.5;
-                                margin-left: 12.4vh;
+                                font-weight: 400;
+                                margin-left: 10vh;
                                 transition: all .2s;
                             }
                             .bottom_txt {
-                                font-size: 6vh;
+                                font-size: 5vh;
                                 font-weight: 600;
                                 letter-spacing: -.3vh;
                                 line-height: 1;
@@ -89,6 +90,18 @@
                                 margin-bottom: 2vh;
                                 transition: all .2s;
                             }
+                        }
+                    }
+                }
+                .circle:hover {
+                    // mix-blend-mode: luminosity;
+                    z-index: 10;
+                    // background: transparent;
+                    background: #fff;
+
+                    .circle_inner {
+                        .text_box {
+                            color: #000;
                         }
                     }
                 }

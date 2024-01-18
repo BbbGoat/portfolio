@@ -35,7 +35,7 @@ export default function Home() {
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
                   <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(2st)</span>
+                    <span className={styles.top_txt}>(2nd)</span>
                     <span className={styles.bottom_txt}>Aesop</span>
                   </a>
                 </div>
@@ -44,7 +44,7 @@ export default function Home() {
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
                   <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(3st)</span>
+                    <span className={styles.top_txt}>(3rd)</span>
                     <span className={styles.bottom_txt}>Studio</span>
                   </a>
                 </div>
@@ -53,7 +53,7 @@ export default function Home() {
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
                   <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(4st)</span>
+                    <span className={styles.top_txt}>(4th)</span>
                     <span className={styles.bottom_txt}>Dcode</span>
                   </a>
                 </div>
