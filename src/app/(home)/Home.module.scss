@@ -49,7 +49,7 @@
                     width: 28.5vh;
                     background: #000;
                     border-radius: 100%;
-                    margin: 0 4.8vh;
+                    margin: 0 -4vh;
                     transition: all .2s;
                     overflow: hidden;
                     cursor: pointer;
@@ -74,14 +74,20 @@
                             color: #fff;
                             
                             .top_txt {
-                                font-size: 2.2vh;
+                                font-size: 3vh;
                                 letter-spacing: -.11vh;
                                 line-height: 1.5;
-                                margin-left: 10.4vh;
+                                margin-left: 12.4vh;
                                 transition: all .2s;
                             }
                             .bottom_txt {
-
+                                font-size: 6vh;
+                                font-weight: 600;
+                                letter-spacing: -.3vh;
+                                line-height: 1;
+                                // margin-right: 5.1vh;
+                                margin-bottom: 2vh;
+                                transition: all .2s;
                             }
                         }
                     }

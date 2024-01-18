@@ -26,8 +26,8 @@ export default function Home() {
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
                   <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(text)</span>
-                    <span className={styles.bottom_txt}>think</span>
+                    <span className={styles.top_txt}>(1st)</span>
+                    <span className={styles.bottom_txt}>CJ</span>
                   </a>
                 </div>
               </div>
@@ -35,8 +35,8 @@ export default function Home() {
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
                   <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(text)</span>
-                    <span className={styles.bottom_txt}>think</span>
+                    <span className={styles.top_txt}>(2st)</span>
+                    <span className={styles.bottom_txt}>Aesop</span>
                   </a>
                 </div>
               </div>
@@ -44,8 +44,8 @@ export default function Home() {
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
                   <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(text)</span>
-                    <span className={styles.bottom_txt}>think</span>
+                    <span className={styles.top_txt}>(3st)</span>
+                    <span className={styles.bottom_txt}>Studio</span>
                   </a>
                 </div>
               </div>
@@ -53,8 +53,8 @@ export default function Home() {
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
                   <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(text)</span>
-                    <span className={styles.bottom_txt}>think</span>
+                    <span className={styles.top_txt}>(4st)</span>
+                    <span className={styles.bottom_txt}>Dcode</span>
                   </a>
                 </div>
               </div>
