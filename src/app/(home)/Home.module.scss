@@ -41,6 +41,7 @@
             width: 100%;
             
             .wrapper {
+                mix-blend-mode: multiply;
                 display: flex;
                 position: relative;
 
@@ -58,8 +59,43 @@
                         position: relative;
                         width: 100%;
                         padding-top: 100%;
+                    }
+                }
+                .circle:hover {
+                    z-index: 10;
+                    background: #fff;
+                }
+            }
+        }
+        // 텍스트그룹
+        .text_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 40vh;
+            width: 100%;
+            
+            .wrapper {
+                display: flex;
+                position: relative;
+
+                .circle {
+                    // position: relative;
+                    width: 28.5vh;
+                    background: transparent;
+                    border-radius: 100%;
+                    margin: 0 -3vh;
+                    transition: all .2s;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    .circle_inner {
+                        position: relative;
+                        width: 100%;
+                        padding-top: 100%;
                         
-                        .text_box {
+                        .text_group {
                             position: absolute;
                             top: 0;
                             left: 0;
@@ -71,7 +107,7 @@
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            color: #fff;
+                            color: #000;
                             
                             .top_txt {
                                 font-size: 2vh;
@@ -86,22 +122,9 @@
                                 font-weight: 600;
                                 letter-spacing: -.3vh;
                                 line-height: 1;
-                                // margin-right: 5.1vh;
                                 margin-bottom: 2vh;
                                 transition: all .2s;
                             }
-                        }
-                    }
-                }
-                .circle:hover {
-                    // mix-blend-mode: luminosity;
-                    z-index: 10;
-                    // background: transparent;
-                    background: #fff;
-
-                    .circle_inner {
-                        .text_box {
-                            color: #000;
                         }
                     }
                 }

@@ -19,49 +19,79 @@ export default function Home() {
           <div className={styles.linear}>
             <Marquee />
           </div>
+
+
+          <div className={styles.text_box}>
+            <div className={styles.wrapper}>
+
+              <div className={styles.circle}>
+                <div className={styles.circle_inner}>
+                  <a className={styles.text_group} href="#">
+                    <span className={styles.top_txt}>(1st)</span>
+                    <span className={styles.bottom_txt}>CJ</span>
+                  </a>
+                </div>
+              </div>
+              <div className={styles.circle}>
+                <div className={styles.circle_inner}>
+                  <a className={styles.text_group} href="#">
+                    <span className={styles.top_txt}>(2nd)</span>
+                    <span className={styles.bottom_txt}>Aesop</span>
+                  </a>
+                </div>
+              </div>
+              <div className={styles.circle}>
+                <div className={styles.circle_inner}>
+                  <a className={styles.text_group} href="#">
+                    <span className={styles.top_txt}>(3rd)</span>
+                    <span className={styles.bottom_txt}>Studio</span>
+                  </a>
+                </div>
+              </div>
+              <div className={styles.circle}>
+                <div className={styles.circle_inner}>
+                  <a className={styles.text_group} href="#">
+                    <span className={styles.top_txt}>(4th)</span>
+                    <span className={styles.bottom_txt}>Dcode</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
           
           <div className={styles.circle_box}>
             <div className={styles.wrapper}>
 
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
-                  <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(1st)</span>
-                    <span className={styles.bottom_txt}>CJ</span>
-                  </a>
                 </div>
               </div>
               
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
-                  <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(2nd)</span>
-                    <span className={styles.bottom_txt}>Aesop</span>
-                  </a>
                 </div>
               </div>
               
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
-                  <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(3rd)</span>
-                    <span className={styles.bottom_txt}>Studio</span>
-                  </a>
                 </div>
               </div>
 
               <div className={styles.circle}>
                 <div className={styles.circle_inner}>
-                  <a className={styles.text_box} href="#">
-                    <span className={styles.top_txt}>(4th)</span>
-                    <span className={styles.bottom_txt}>Dcode</span>
-                  </a>
                 </div>
               </div>
-              
 
             </div>
           </div>
+
+
+
+          
+
+
         </div>
       </div>
     </section>
