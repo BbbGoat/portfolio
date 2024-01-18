@@ -96,6 +96,7 @@
                         padding-top: 100%;
                         
                         .text_group {
+                            mix-blend-mode: difference;
                             position: absolute;
                             top: 0;
                             left: 0;
@@ -107,7 +108,7 @@
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            color: #000;
+                            color: #fff;
                             
                             .top_txt {
                                 font-size: 2vh;
