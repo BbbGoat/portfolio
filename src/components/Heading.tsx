@@ -4,12 +4,14 @@ import styles from './Heading.module.scss'
 interface IHeadingProps {
     title: string;
     subTitle?: string;
+    emoji: string;
     [x: string]: any;
 }
 
 const Heading = ({
     title,
     subTitle,
+    emoji,
     ...restProps
 }: IHeadingProps) => {
   return (
@@ -20,7 +22,7 @@ const Heading = ({
                     {title}
                 </div>
                 <div className={styles.emoji}>
-                    <img src="/emojis/heart.png" alt="아이콘 이미지" />
+                    <img src={emoji} alt="아이콘 이미지" />
                 </div>
             </div>
             <div className={styles.desc}>
