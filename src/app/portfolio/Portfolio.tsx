@@ -7,7 +7,7 @@ const projectList = [
   {
     id: 1,
     name: 'CJ 그룹',
-    stack: 'React / Node.js /',
+    stack: 'React / Node.js / asdfasdf',
     url: '',
   },
   {
@@ -59,10 +59,12 @@ const Portfolio = () => {
                         <p>{name}</p>
                       </div>
                       <div className={styles.flex}>
-                        <div className={styles.stack}>
-                          <span>
-                            {stack}
-                          </span>
+                        {/* Marqee로 만들 부분!!! */}
+                        <div className={`${styles.stack} ${styles.marquee}`}>
+                          <div>{stack}</div>
+                          <div>{stack}</div>
+                          <div>{stack}</div>
+                          <div>{stack}</div>
                         </div>
                         <div className={styles.arrow}>
                           {'>'}

@@ -74,16 +74,16 @@
                         .stack {
                             width: 35vw;
                             margin-right: 3vw;
+                            font-size: 2vw;
 
-                            // display: -webkit-box;
+                            display: -webkit-box;
                             -webkit-line-clamp: 1;
                             -webkit-box-orient: vertical;
                             text-overflow: ellipsis;
                             overflow: hidden;
-                            
-                            span {
-                                font-size: 2vw;
-                            }
+                        }
+                        .marquee {
+
                         }
                         .arrow {
                             // 임시로 사이즈만 맞춰둔거임!
