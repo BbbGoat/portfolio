@@ -1,6 +1,6 @@
 .portfolio {
-    height: 700px;
     background-color: #fff;
+    padding-bottom: 150px;
 
     .content {
         margin-top: 30px;
@@ -8,7 +8,7 @@
         .container {
             width: 100%;
 
-            .category_all {
+            .main_tab {
                 padding: 0 3rem;
                 background-color: #000;
                 height: 8vw;
@@ -26,9 +26,9 @@
                         color: #fff;
     
                         &:nth-of-type(1) {
+                            width: 18vw;
                             font-size: 3vw;
                             line-height: 3vw;
-                            width: 20vw;
                             margin-bottom: 0.4vw;
                         }
                         &:nth-of-type(2) {
@@ -37,7 +37,36 @@
                     }
                 }
             }
-            .category_sub {
+            .sub_tab {
+                margin: 0 3rem;
+                height: 8vw;
+                background-color: #fff;
+                
+                .text_box {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    margin-left: 18vw;
+                    border-bottom: 1px solid #000;
+
+                    p {
+                        display: inline-block;
+                        font-size: 4vw;
+                        line-height: 4vw;
+                        font-weight: 500;
+                        color: #000;
+    
+                        &:nth-of-type(1) {
+                            width: 6vw;
+                            font-size: 3vw;
+                            line-height: 3vw;
+                            margin-bottom: 0.4vw;
+                        }
+                        &:nth-of-type(2) {
+                            margin-bottom: 0.4vw;
+                        }
+                    }
+                }
 
             }
         }
