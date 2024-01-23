@@ -3,10 +3,29 @@ import styles from './Portfolio.module.scss'
 import Heading from '../../components/Heading'
 import { Link } from 'react-router-dom'
 
-const list = [
+const projectList = [
   {
     id: 1,
-    name: '',
+    name: 'CJ 그룹',
+    stack: 'React / Node.js /',
+    url: '',
+  },
+  {
+    id: 2,
+    name: 'Aesop',
+    stack: '',
+    url: '',
+  },
+  {
+    id: 3,
+    name: 'Studio App',
+    stack: '',
+    url: '',
+  },
+  {
+    id: 4,
+    name: 'DCode Shop',
+    stack: '',
     url: '',
   },
 ]
@@ -28,17 +47,34 @@ const Portfolio = () => {
             </div>
           </div>
           {
-            // 맵돌릴거유
-            
+            projectList.sort((a,b)=> b.id - a.id).map((item)=>{
+              const { id, name, url, stack } = item;
+              
+              return (
+                <Link to={url} key={id} target='_blank'>
+                  <div className={styles.sub_tab}>
+                    <div className={styles.text_box}>
+                      <div className={styles.flex}>
+                        <p>0{id}</p>
+                        <p>{name}</p>
+                      </div>
+                      <div className={styles.flex}>
+                        <div className={styles.stack}>
+                          <span>
+                            {stack}
+                          </span>
+                        </div>
+                        <div className={styles.arrow}>
+                          {'>'}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              )
+            }) 
           }
-          <Link to={'/'}>
-            <div className={styles.sub_tab}>
-              <div className={styles.text_box}>
-                <p>04</p>
-                <p>DCode Shop</p>
-              </div>
-            </div>
-          </Link>
+          
         </div>
       </div>
     </section>
