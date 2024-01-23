@@ -1,5 +1,6 @@
 .heading {
     position: relative;
+    padding: 68px 3rem 0;
     width: 100%;
 
     .wrap {
@@ -27,7 +28,7 @@
             }
         }
         .desc {
-            margin-top: 20px;
+            margin-top: 30px;
             .text {
                 max-width: 40vw;
                 text-wrap: balance;
@@ -39,3 +40,14 @@
         }
     }
 }
+
+
+
+@import '../styles/mixin';
+
+@include mobile {
+    .heading {
+        padding: 68px 2rem 0;
+    }
+}
+

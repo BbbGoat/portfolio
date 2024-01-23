@@ -1,5 +1,4 @@
 .skills {
-    padding: 68px 3rem 0;
     height: 1200px;
     background-color: #fff;
 }
@@ -10,6 +9,6 @@
 
 @include mobile {
     .skills {
-        padding: 68px 2rem 0;
+        // padding: 68px 2rem 0;
     }
 }

@@ -1,14 +1,51 @@
 .portfolio {
-    padding: 68px 3rem 0;
     height: 700px;
     background-color: #fff;
+
+    .content {
+        margin-top: 30px;
+
+        .container {
+            width: 100%;
+
+            .category_all {
+                padding: 0 3rem;
+                background-color: #000;
+                height: 8vw;
+                
+                .text_box {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    
+                    p {
+                        display: inline-block;
+                        font-size: 4vw;
+                        line-height: 4vw;
+                        font-weight: 500;
+                        color: #fff;
+    
+                        &:nth-of-type(1) {
+                            font-size: 3vw;
+                            line-height: 3vw;
+                            width: 20vw;
+                            margin-bottom: 0.4vw;
+                        }
+                        &:nth-of-type(2) {
+                            // width: 500px;
+                        }
+                    }
+                }
+            }
+            .category_sub {
+
+            }
+        }
+    }
 }
 
 
 @import '../../styles/mixin';
 
 @include mobile {
-    .portfolio {
-        padding: 68px 2rem 0;
-    }
 }

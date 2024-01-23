@@ -12,7 +12,15 @@ const Portfolio = () => {
       />
       <div className={styles.content}>
         <div className={styles.container}>
-          여기부터는 섹션별 메인 콘텐츠가 들어갑니다! 
+          <div className={styles.category_all}>
+            <div className={styles.text_box}>
+              <p>(04)</p>
+              <p>All Project</p>
+            </div>
+          </div>
+          <div className={styles.category_sub}>
+
+          </div>
         </div>
       </div>
     </section>
