@@ -1,24 +1,26 @@
 .heading {
     position: relative;
-    padding: 68px 3rem 0;
+    padding: 68px 3rem;
     width: 100%;
 
     .wrap {
+        margin: 5rem 0;
         // display: flex;
         
         .title {
             display: flex;
             align-items: flex-end;
             gap: 2vw;
+            height: 8vw;
+            line-height: 8vw;
 
             .text {
                 // 추후에 수정해야함 => 조절할 경우 emoji 크기도 동일하게 해줘야함
                 font-size: 10vw;
-                line-height: 10vw;
                 font-weight: 600;
             }
             .emoji {
-                height: 8vw;
+                height: 100%;
 
                 img {
                     width: 100%;

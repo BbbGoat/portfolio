@@ -7,26 +7,26 @@ const projectList = [
   {
     id: 1,
     name: 'CJ 그룹',
-    stack: 'React / Node.js / asdfasdf',
-    url: '',
+    stack: 'HTML5 / CSS3 / Javascript',
+    url: 'https://bbbgoat.github.io/FED-PJ-WBS-SAEM/CJ/index.html',
   },
   {
     id: 2,
     name: 'Aesop',
-    stack: '',
-    url: '',
+    stack: 'Vue.js / Vuex / Javscript / JQuery',
+    url: 'https://bbbgoat.github.io/Aesop/main/index.html',
   },
   {
     id: 3,
     name: 'Studio App',
-    stack: '',
-    url: '',
+    stack: 'React / Redux / three.js / Javascript / ',
+    url: 'https://bbbgoat.github.io/Studio-app/',
   },
   {
     id: 4,
     name: 'DCode Shop',
-    stack: '',
-    url: '',
+    stack: 'Next.js / Typescript / Firebase / Vercel',
+    url: 'https://react-next-dcode-app.vercel.app/',
   },
 ]
 
@@ -60,11 +60,23 @@ const Portfolio = () => {
                       </div>
                       <div className={styles.flex}>
                         {/* Marqee로 만들 부분!!! */}
-                        <div className={`${styles.stack} ${styles.marquee}`}>
-                          <div>{stack}</div>
-                          <div>{stack}</div>
-                          <div>{stack}</div>
-                          <div>{stack}</div>
+                        <div className={styles.stack}>
+                          <div className={styles.marquee}>
+                            <div className={styles.marquee_inner}>
+                              <div className={styles.marquee_item}>
+                                <h4>{stack}</h4>
+                              </div>
+                              <div className={styles.marquee_item}>
+                                <h4>{stack}</h4>
+                              </div>
+                              <div className={styles.marquee_item}>
+                                <h4>{stack}</h4>
+                              </div>
+                              <div className={styles.marquee_item}>
+                                <h4>{stack}</h4>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div className={styles.arrow}>
                           {'>'}

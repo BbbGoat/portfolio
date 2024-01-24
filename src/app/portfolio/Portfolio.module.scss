@@ -29,10 +29,8 @@
                             width: 18vw;
                             font-size: 3vw;
                             line-height: 3vw;
-                            margin-bottom: 0.4vw;
                         }
                         &:nth-of-type(2) {
-                            margin-bottom: 0.4vw;
                         }
                     }
                 }
@@ -63,27 +61,48 @@
         
                             &:nth-of-type(1) {
                                 width: 6vw;
-                                font-size: 3vw;
+                                font-size: 2vw;
                                 line-height: 3vw;
-                                margin-bottom: 0.4vw;
                             }
                             &:nth-of-type(2) {
-                                margin-bottom: 0.4vw;
                             }
                         }
                         .stack {
                             width: 35vw;
                             margin-right: 3vw;
                             font-size: 2vw;
+                            
+                            .marquee {
+                                position: relative;
+                                overflow: hidden;
+                                --move-initial: -25%;
+                                --move-final: -50%;
 
-                            display: -webkit-box;
-                            -webkit-line-clamp: 1;
-                            -webkit-box-orient: vertical;
-                            text-overflow: ellipsis;
-                            overflow: hidden;
-                        }
-                        .marquee {
+                                .marquee_inner {
+                                    position: relative;
+                                    display: flex;
+                                    width: fit-content;
+                                    transform: translate3d(var(--move-initial), 0, 0);
+                                    animation: marquee 3s linear infinite;
+                                    animation-play-state: paused;
 
+                                    .marquee_item {
+                                        display: flex;
+                                        align-items: center;
+                                        // height: 6.5vw;
+                                        opacity: 1;
+                                        white-space: nowrap;
+                                        overflow: visible;
+                                        
+                                        h4 {
+                                            font-style: italic;
+                                            font-weight: 400;
+                                            font-size: 1.4vw;
+                                            margin-right: 50px;
+                                        }
+                                    }
+                                }
+                            }
                         }
                         .arrow {
                             // 임시로 사이즈만 맞춰둔거임!
@@ -93,11 +112,32 @@
                             background-color: blanchedalmond;
                         }
                     }
+
+                    &:hover {
+                        .flex {
+                            .stack {
+                                .marquee {
+                                    .marquee_inner {
+                                        animation-play-state: running;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
             }
         }
     }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    } 
 }
 
 
