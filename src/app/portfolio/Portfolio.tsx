@@ -19,7 +19,7 @@ const projectList = [
   {
     id: 3,
     name: 'Studio App',
-    stack: 'React / Redux / three.js / Javascript / ',
+    stack: 'React / Redux / three.js / Javascript / JQuery ',
     url: 'https://bbbgoat.github.io/Studio-app/',
   },
   {
@@ -35,7 +35,6 @@ const Portfolio = () => {
     <section className={styles.portfolio}>
       <Heading
         title="Portfolio"
-        subTitle="If you should put in the text this will be subTitle Apple Banana" 
         emoji='/emojis/notebook.png'
       />
       <div className={styles.content}>
@@ -55,7 +54,7 @@ const Portfolio = () => {
                   <div className={styles.sub_tab}>
                     <div className={styles.text_box}>
                       <div className={styles.flex}>
-                        <p>0{id}</p>
+                        <p>(0{id})</p>
                         <p>{name}</p>
                       </div>
                       <div className={styles.flex}>
@@ -79,7 +78,7 @@ const Portfolio = () => {
                           </div>
                         </div>
                         <div className={styles.arrow}>
-                          {'>'}
+                          <img src="/images/arrow_right_1.5x.png" alt="바로가기" />
                         </div>
                       </div>
                     </div>
