@@ -115,6 +115,8 @@
                         .arrow {
                             width: 4vw;
                             height: 4vw;
+                            transform: rotate(45deg);
+                            transition: all .3s;
 
                             img {
                                 width: 100%;
@@ -132,6 +134,9 @@
                                         animation-play-state: running;
                                     }
                                 }
+                            }
+                            .arrow {
+                                transform: rotate(0deg);
                             }
                         }
                     }
