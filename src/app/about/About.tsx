@@ -30,17 +30,27 @@ const About = () => {
                         <button>
                           <span>Sodssd jSod mEj jcmek <br/> Wef mlkd fWmnvl</span>
                         </button>
-                        <p>
-                          추가 내용 추가 내용
-                        </p>
+                        <ol>
+                          <li className={styles.on}>
+                            <span>
+                              추가 내용 추가 내용 <br/>
+                              추ㅏㅣ거;미나덜
+                            </span>
+                          </li>
+                        </ol>
                       </li>
                       <li className={styles.item}>
                         <button>
                           <span>Sodssd jSod mEj jcmek <br/> Wef mlkd fWmnvl</span>
                         </button>
-                        <p>
-                          추가 내용 추가 내용
-                        </p>
+                        <ol>
+                          <li className={styles.on}>
+                            <span>
+                              추가 내용 추가 내용 <br/>
+                              추ㅏㅣ거;미나덜
+                            </span>
+                          </li>
+                        </ol>
                       </li>
                     </ul>
                   </li>
@@ -61,17 +71,27 @@ const About = () => {
                         <button>
                           <span>Sodssd jSod mEj jcmek <br/> Wef mlkd fWmnvl</span>
                         </button>
-                        <p>
-                          추가 내용 추가 내용
-                        </p>
+                        <ol>
+                          <li className={styles.on}>
+                            <span>
+                              추가 내용 추가 내용 <br/>
+                              추ㅏㅣ거;미나덜
+                            </span>
+                          </li>
+                        </ol>
                       </li>
                       <li className={styles.item}>
                         <button>
                           <span>Sodssd jSod mEj jcmek <br/> Wef mlkd fWmnvl</span>
                         </button>
-                        <p>
-                          추가 내용 추가 내용
-                        </p>
+                        <ol>
+                          <li className={styles.on}>
+                            <span>
+                              추가 내용 추가 내용 <br/>
+                              추ㅏㅣ거;미나덜
+                            </span>
+                          </li>
+                        </ol>
                       </li>
                     </ul>
                   </li>

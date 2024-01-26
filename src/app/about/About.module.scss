@@ -90,7 +90,6 @@
                                     .item {
                                         position: relative;
                                         display: block;
-                                        font-size: 0;
                                         padding: 0.75vw 0 0.3vw;
                                         overflow: hidden;
 
@@ -99,11 +98,29 @@
                                             width: 100%;
                                             border: 0;
                                             background: #fff;
+                                            cursor: pointer;
 
                                             span {
                                                 font-size: 1.7vw;
                                                 letter-spacing: -.05vw;
                                                 line-height: 1.8;
+                                            }
+                                        }
+                                        ol {
+                                            li {
+                                                opacity: 0;
+                                                height: 0;
+                                                overflow: hidden;
+                                                transition: all 1.05s cubic-bezier(.19,1,.22,1);
+                                                span {
+                                                    display: inline-block;
+                                                    font-size: 1.7vw;
+                                                    padding: 1vw 0;
+                                                }
+                                                &.on {
+                                                    height: 6vw;
+                                                    opacity: 1;
+                                                }
                                             }
                                         }
 
