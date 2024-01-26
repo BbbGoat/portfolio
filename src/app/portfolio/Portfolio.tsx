@@ -24,7 +24,7 @@ const projectList = [
   },
   {
     id: 4,
-    name: 'DCode Shop',
+    name: 'Dcode Shop',
     stack: 'Next.js / Typescript / Firebase / Vercel',
     url: 'https://react-next-dcode-app.vercel.app/',
   },
@@ -32,17 +32,17 @@ const projectList = [
 
 const Portfolio = () => {
   return (
-    <section className={styles.portfolio}>
+    <article className={styles.portfolio}>
       <Heading
         title="Portfolio"
         emoji='/emojis/notebook.png'
       />
-      <div className={styles.content}>
+      <section className={styles.content}>
         <div className={styles.container}>
           <div className={styles.main_tab}>
             <div className={styles.text_box}>
-              <p>(04)</p>
-              <p>All Project</p>
+              <p>01/</p>
+              <p>FED Project 💻</p>
             </div>
           </div>
           {
@@ -89,8 +89,30 @@ const Portfolio = () => {
           }
           
         </div>
-      </div>
-    </section>
+      </section>
+      {/* 디자인 */}
+      <section className={styles.content}>
+        <div className={styles.container}>
+          <div className={styles.main_tab}>
+            <div className={styles.text_box}>
+              <p>02/</p>
+              <p>Web Design 🎨</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* 영상 */}
+      <section className={styles.content}>
+        <div className={styles.container}>
+          <div className={styles.main_tab}>
+            <div className={styles.text_box}>
+              <p>03/</p>
+              <p>Video production 🎬</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
   )
 }
 
