@@ -25,7 +25,7 @@ const About = () => {
                 const { year, details } = item;
                 
                 return (
-                  <li>
+                  <li key={year}>
                     <h4 className={styles.year}>
                       <span className={styles.txt}>
                         <span>{year}</span>
@@ -37,11 +37,11 @@ const About = () => {
 
                           {/* 한번 더 반복 */}
                           {
-                            item.details.map((item)=>{
+                            details.map((item, idx)=>{
                               const { title, content, date } = item;
                               
                               return (
-                                <li className={styles.item}>
+                                <li className={styles.item} key={idx}>
                                   <button>
                                     <span>
                                       {title} <br /> ({date})
@@ -49,14 +49,16 @@ const About = () => {
                                   </button>
                                   <ol>
                                     <li className={styles.on}>
-                                        {content.split("^").map((line,idx)=>{
+                                      <span>
+                                        {content.split("^").map((line)=>{
                                           return (
-                                            <span key={idx}>
+                                            <>
                                               {line}
                                               <br />
-                                            </span>
+                                            </>
                                           )
                                         })}
+                                      </span>
                                     </li>
                                   </ol>
                                 </li>
