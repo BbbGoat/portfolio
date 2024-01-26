@@ -53,7 +53,7 @@ const Portfolio = () => {
                 <div className={styles.sub_tab} key={id}>
                   <Link to={url} target='_blank'>
                     <div className={styles.text_box}>
-                      <div className={styles.flex}>
+                      <div className={`${styles.flex} ${styles.move_ani}`}>
                         <p>(0{id})</p>
                         <p>{name}</p>
                       </div>

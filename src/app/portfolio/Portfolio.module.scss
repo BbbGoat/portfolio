@@ -44,8 +44,13 @@
                     align-items: center;
                     height: 100%;
                     margin-left: 16vw;
+                    background: #fff;
                     border-bottom: 1.5px solid #000;
-
+                    
+                    .move_ani {
+                        transform: translateX(0);
+                        transition: transform .1s cubic-bezier(0.165, 0.84, 0.44, 1);
+                    }
                     .flex {
                         display: flex;
                         align-items: center;
@@ -115,7 +120,7 @@
                             width: 4vw;
                             height: 4vw;
                             transform: rotate(45deg);
-                            transition: all .3s;
+                            transition: all .1s cubic-bezier(0.165, 0.84, 0.44, 1);
 
                             img {
                                 width: 100%;
@@ -126,6 +131,10 @@
                     }
 
                     &:hover {
+                        mix-blend-mode: difference;
+                        .move_ani {
+                            transform: translateX(5%);
+                        }
                         .flex {
                             .stack {
                                 .marquee {
