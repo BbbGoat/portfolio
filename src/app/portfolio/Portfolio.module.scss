@@ -30,13 +30,11 @@
                             font-size: 3vw;
                             line-height: 3vw;
                         }
-                        &:nth-of-type(2) {
-                        }
                     }
                 }
             }
             .sub_tab {
-                margin: 0 3rem;
+                margin-left: 3rem;
                 height: 8vw;
                 background-color: #fff;
                 
@@ -113,6 +111,7 @@
                             }
                         }
                         .arrow {
+                            margin-right: 3rem;
                             width: 4vw;
                             height: 4vw;
                             transform: rotate(45deg);
@@ -160,4 +159,13 @@
 @import '../../styles/mixin';
 
 @include mobile {
+    .main_tab {
+        padding: 0 2rem !important;
+    }
+    .sub_tab {
+        margin-left: 2rem !important;
+    }
+    .arrow {
+        margin-right: 2rem !important;
+    }
 }

@@ -50,8 +50,8 @@ const Portfolio = () => {
               const { id, name, url, stack } = item;
               
               return (
-                <Link to={url} key={id} target='_blank'>
-                  <div className={styles.sub_tab}>
+                <div className={styles.sub_tab} key={id}>
+                  <Link to={url} target='_blank'>
                     <div className={styles.text_box}>
                       <div className={styles.flex}>
                         <p>(0{id})</p>
@@ -82,8 +82,8 @@ const Portfolio = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               )
             }) 
           }
