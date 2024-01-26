@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./About.module.scss";
 import Heading from "../../components/Heading";
+import AboutData from "./AboutList";
 
 const About = () => {
+  const [click, setClick] = useState(false);
+
   return (
     <article className={styles.about}>
-      <Heading 
+      <Heading
         title="About"
-        subTitle="If you should put in the text this will be subTitle Apple Banana" 
+        subTitle="If you should put in the text this will be subTitle Apple Banana"
         emoji="/emojis/heart.png"
       />
       <section className={styles.sec1}>
@@ -17,87 +20,55 @@ const About = () => {
               <span>Press</span>
             </h2>
             <ul>
-              <li>
-                <h4 className={styles.year}>
-                  <span className={styles.txt}>
-                    <span>2023</span>
-                  </span>
-                </h4>
-                <ul className={styles.detail}>
+              {/* 반복 */}
+              {AboutData.map((item) => {
+                const { year, details } = item;
+                
+                return (
                   <li>
-                    <ul className={styles.lists}>
-                      <li className={styles.item}>
-                        <button>
-                          <span>Sodssd jSod mEj jcmek <br/> Wef mlkd fWmnvl</span>
-                        </button>
-                        <ol>
-                          <li className={styles.on}>
-                            <span>
-                              추가 내용 추가 내용 <br/>
-                              추ㅏㅣ거;미나덜
-                            </span>
-                          </li>
-                        </ol>
-                      </li>
-                      <li className={styles.item}>
-                        <button>
-                          <span>Sodssd jSod mEj jcmek <br/> Wef mlkd fWmnvl</span>
-                        </button>
-                        <ol>
-                          <li className={styles.on}>
-                            <span>
-                              추가 내용 추가 내용 <br/>
-                              추ㅏㅣ거;미나덜
-                            </span>
-                          </li>
-                        </ol>
+                    <h4 className={styles.year}>
+                      <span className={styles.txt}>
+                        <span>{year}</span>
+                      </span>
+                    </h4>
+                    <ul className={styles.detail}>
+                      <li>
+                        <ul className={styles.lists}>
+
+                          {/* 한번 더 반복 */}
+                          {
+                            item.details.map((item)=>{
+                              const { title, content, date } = item;
+                              
+                              return (
+                                <li className={styles.item}>
+                                  <button>
+                                    <span>
+                                      {title} <br /> ({date})
+                                    </span>
+                                  </button>
+                                  <ol>
+                                    <li className={styles.on}>
+                                        {content.split("^").map((line,idx)=>{
+                                          return (
+                                            <span key={idx}>
+                                              {line}
+                                              <br />
+                                            </span>
+                                          )
+                                        })}
+                                    </li>
+                                  </ol>
+                                </li>
+                              )
+                            })
+                          }
+                        </ul>
                       </li>
                     </ul>
                   </li>
-                </ul>
-              </li>
-
-              {/* 임시로 반복! */}
-              <li>
-                <h4 className={styles.year}>
-                  <span className={styles.txt}>
-                    <span>2023</span>
-                  </span>
-                </h4>
-                <ul className={styles.detail}>
-                  <li>
-                    <ul className={styles.lists}>
-                      <li className={styles.item}>
-                        <button>
-                          <span>Sodssd jSod mEj jcmek <br/> Wef mlkd fWmnvl</span>
-                        </button>
-                        <ol>
-                          <li className={styles.on}>
-                            <span>
-                              추가 내용 추가 내용 <br/>
-                              추ㅏㅣ거;미나덜
-                            </span>
-                          </li>
-                        </ol>
-                      </li>
-                      <li className={styles.item}>
-                        <button>
-                          <span>Sodssd jSod mEj jcmek <br/> Wef mlkd fWmnvl</span>
-                        </button>
-                        <ol>
-                          <li className={styles.on}>
-                            <span>
-                              추가 내용 추가 내용 <br/>
-                              추ㅏㅣ거;미나덜
-                            </span>
-                          </li>
-                        </ol>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-
+                );
+              })}
             </ul>
           </div>
         </div>
