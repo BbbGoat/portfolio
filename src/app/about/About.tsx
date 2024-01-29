@@ -7,10 +7,10 @@ const About = () => {
   const [addClass, setAddClass] = useState<number[]>([]);
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>, id: number) => {
-    setAddClass([...addClass, id]);
     if (addClass.includes(id)) {
       return setAddClass(addClass.filter((item)=>item !== id));
     }
+    setAddClass([...addClass, id]);
   }
 
   return (
