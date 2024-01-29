@@ -1,24 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./About.module.scss";
 import Heading from "../../components/Heading";
 import AboutData from "./AboutList";
 
 const About = () => {
-  const [click, setClick] = useState(false);
-  const [onClick, setOnClick] = useState<number[]>([]);
+  const [addClass, setAddClass] = useState<number[]>([]);
 
-  const arr: number[] = [];
-  
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>, id: number) => {
-    e.preventDefault();
-    if (arr.includes(id)) {
-      arr.push(id)
-      // return setOnClick(arr)
-      return setOnClick(arr.filter((item)=>item !== id))
+    setAddClass([...addClass, id]);
+    if (addClass.includes(id)) {
+      return setAddClass(addClass.filter((item)=>item !== id));
     }
-    arr.push(id);
-    setOnClick(arr)
-    console.log(arr, onClick)
   }
 
   return (
@@ -63,7 +55,7 @@ const About = () => {
                                     </span>
                                   </button>
                                   <ol>
-                                    <li className={styles.on}>
+                                    <li className={addClass.includes(id) ? styles.on : ''}>
                                       <span>
                                         {content.split("^").map((line)=>{
                                           return (
