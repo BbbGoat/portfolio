@@ -5,6 +5,21 @@ import AboutData from "./AboutList";
 
 const About = () => {
   const [click, setClick] = useState(false);
+  const [onClick, setOnClick] = useState<number[]>([]);
+
+  const arr: number[] = [];
+  
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>, id: number) => {
+    e.preventDefault();
+    if (arr.includes(id)) {
+      arr.push(id)
+      // return setOnClick(arr)
+      return setOnClick(arr.filter((item)=>item !== id))
+    }
+    arr.push(id);
+    setOnClick(arr)
+    console.log(arr, onClick)
+  }
 
   return (
     <article className={styles.about}>
@@ -38,11 +53,11 @@ const About = () => {
                           {/* 한번 더 반복 */}
                           {
                             details.map((item, idx)=>{
-                              const { title, content, date } = item;
+                              const { id, title, content, date } = item;
                               
                               return (
                                 <li className={styles.item} key={idx}>
-                                  <button>
+                                  <button onClick={(e)=>handleClick(e, id)}>
                                     <span>
                                       {title} <br /> ({date})
                                     </span>
