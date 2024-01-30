@@ -11,7 +11,7 @@ const Skills = () => {
       />
       <div className={styles.content}>
         <div className={styles.container}>
-          여기부터는 섹션별 메인 콘텐츠가 들어갑니다! 
+          내용 들어갈 부분
         </div>
       </div>
     </section>
