@@ -4,17 +4,17 @@ import Heading from '../../components/Heading'
 
 const Skills = () => {
   return (
-    <section className={styles.skills}>
+    <article className={styles.skills}>
       <Heading
         title="Skills"
         emoji='/emojis/shine.png'
       />
-      <div className={styles.content}>
-        <div className={styles.container}>
-          내용 들어갈 부분
+      <section className={styles.section}>
+        <div>
+
         </div>
-      </div>
-    </section>
+      </section>
+    </article>
   )
 }
 
