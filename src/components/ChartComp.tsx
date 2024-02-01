@@ -27,7 +27,7 @@ export const options = {
       },
       title: {
         display: true,
-        text: 'STACK LEVEL 🧪',
+        text: 'TECH STACK 🧪',
       },
     },
     scales: {
@@ -38,15 +38,15 @@ export const options = {
     }
 };
 
-const labels = ['HTML / CSS', 'React', 'Next.js', 'Vue.js', 'Javascript', 'Typescript', 'Node.js', 'Figma', 'Photoshop', 'Illustrator'];
+const labels = ['HTML / CSS', 'Javascript', 'React', 'Next.js', 'Vue.js', 'Typescript', 'Node.js', 'Figma', 'Photoshop', 'Illustrator'];
 
 export const data = {
     labels,
     datasets: [
       {
         label: 'Level',
-        data: [9,9,9,7,9,6,5,8,9,9],
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        data: [9,9,9,9,8,6,5,7,9,9],
+        backgroundColor: 'rgba(255, 231, 108, 0.7)',
       },
     ],
 };
