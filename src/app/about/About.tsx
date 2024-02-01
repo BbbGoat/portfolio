@@ -20,7 +20,7 @@ const About = () => {
     <article className={styles.about}>
       <Heading
         title="About"
-        subTitle="웹 디자이너로 2년 11개월 근무했으며 꾸준한 온/오프라인 공부를 통해 개발자로서 성장하고 있습니다."
+        subTitle="웹 디자이너로 2년 11개월 근무했으며 꾸준한 공부를 통해 개발자로서 성장하고 있습니다."
         emoji="/emojis/heart.png"
       />
       <section className={styles.section}>

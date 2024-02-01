@@ -9,6 +9,7 @@ import {
     Legend,
   } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import styles from './ChartComp.module.scss'
 
 ChartJS.register(
     CategoryScale,
@@ -35,6 +36,9 @@ export const options = {
         min: 0,
         max: 10,
       }
+    },
+    animation: {
+      duration: 1000,
     }
 };
 
@@ -46,7 +50,8 @@ export const data = {
       {
         label: 'Level',
         data: [9,9,9,9,8,6,5,7,9,9],
-        backgroundColor: 'rgba(255, 231, 108, 0.7)',
+        // backgroundColor: 'rgba(0, 0, 0, 0.7)',
+        backgroundColor: 'rgba(255, 231, 108, 0.5)',
       },
     ],
 };
@@ -54,11 +59,9 @@ export const data = {
 
 const ChartComp = () => {
   return (
-    <>
-      <div>
-        <Bar options={options} data={data} />
-      </div>
-    </>
+    <div className={styles.chart_container}>
+      <Bar options={options} data={data} />
+    </div>
   );
 };
 
