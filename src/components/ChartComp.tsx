@@ -27,7 +27,7 @@ export const options = {
       },
       title: {
         display: true,
-        text: 'Chart.js Bar Chart',
+        text: 'STACK LEVEL 🧪',
       },
     },
     scales: {
@@ -38,14 +38,14 @@ export const options = {
     }
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = ['HTML / CSS', 'React', 'Next.js', 'Vue.js', 'Javascript', 'Typescript', 'Node.js', 'Figma', 'Photoshop', 'Illustrator'];
 
 export const data = {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
-        data: [1,2,3,4,5,6,7],
+        label: 'Level',
+        data: [9,9,9,7,9,6,5,8,9,9],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ],
