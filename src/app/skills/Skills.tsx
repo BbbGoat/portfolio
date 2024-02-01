@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Skills.module.scss'
 import Heading from '../../components/Heading'
+import ChartComp from '../../components/ChartComp'
 
 const Skills = () => {
   return (
@@ -11,7 +12,7 @@ const Skills = () => {
       />
       <section className={styles.section}>
         <div>
-
+          <ChartComp />
         </div>
       </section>
     </article>
