@@ -70,11 +70,14 @@ const Skills = () => {
                         text={frontData.text}
                         labels={frontData.name}
                         data={frontData.num}
+                        // bgc='rgba(229, 229, 229, 1)'
+                        bgc='rgba(223, 241, 225, 1)' 
                       />
                       <ChartComp 
                         text={serverData.text}
                         labels={serverData.name}
                         data={serverData.num}
+                        bgc='rgba(251, 241, 211, 1)'
                       />
                     </div>
                   </>
@@ -137,6 +140,7 @@ const Skills = () => {
                         text={designData.text}
                         labels={designData.name}
                         data={designData.num}
+                        bgc='rgba(209, 209, 209, .5)'
                       />
                     </div>
                   </>

@@ -69,7 +69,7 @@ const ChartComp = ({
         data,
         // backgroundColor: 'rgba(255, 228, 147, 0.7)',
         // backgroundColor: 'rgba(255, 243, 181, 1)',
-        backgroundColor: 'rgba(255, 231, 108, 0.5)',
+        backgroundColor: bgc,
       },
     ],
   };
