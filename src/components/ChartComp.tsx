@@ -59,16 +59,12 @@ const ChartComp = ({
     }
   };
   
-  const setLabels = ['HTML', 'CSS', 'Javascript', 'React', 'Next.js', 'Vue.js', 'Typescript', 'Node.js'];
-  
   const setData = {
     labels,
     datasets: [
       {
         label: 'Level',
         data,
-        // backgroundColor: 'rgba(255, 228, 147, 0.7)',
-        // backgroundColor: 'rgba(255, 243, 181, 1)',
         backgroundColor: bgc,
       },
     ],

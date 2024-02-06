@@ -41,8 +41,8 @@ const Portfolio = () => {
         <div className={styles.container}>
           <div className={styles.main_tab}>
             <div className={styles.text_box}>
-              <p>01/</p>
-              <p>FED Project 💻</p>
+              <p>💻</p>
+              <p>FED Project</p>
             </div>
           </div>
           {
@@ -95,8 +95,8 @@ const Portfolio = () => {
         <div className={styles.container}>
           <div className={styles.main_tab}>
             <div className={styles.text_box}>
-              <p>02/</p>
-              <p>Web Design 🎨</p>
+              <p>🎨</p>
+              <p>Web Design</p>
             </div>
           </div>
         </div>
@@ -106,8 +106,8 @@ const Portfolio = () => {
         <div className={styles.container}>
           <div className={styles.main_tab}>
             <div className={styles.text_box}>
-              <p>03/</p>
-              <p>Video production 🎬</p>
+              <p>🎬</p>
+              <p>Video production</p>
             </div>
           </div>
         </div>
