@@ -20,15 +20,32 @@ ChartJS.register(
     Legend
 );
 
-export const options = {
+interface ICharCompProps {
+  text: string;
+  labels: string[];
+  data: number[];
+  bgc?: string;
+  [x: string]: any;
+}
+
+const ChartComp = ({
+  text,
+  labels,
+  data,
+  bgc,
+  ...restProps
+}: ICharCompProps) => {
+  
+  const options = {
     responsive: true,
+    // indexAxis: "y" as const,
     plugins: {
       legend: {
         position: 'top' as const,
       },
       title: {
         display: true,
-        text: 'TECH STACK 🧪',
+        text: text,
       },
     },
     scales: {
@@ -40,27 +57,25 @@ export const options = {
     animation: {
       duration: 1000,
     }
-};
-
-const labels = ['HTML / CSS', 'Javascript', 'React', 'Next.js', 'Vue.js', 'Typescript', 'Node.js', 'Figma', 'Photoshop', 'Illustrator'];
-
-export const data = {
+  };
+  
+  const setLabels = ['HTML', 'CSS', 'Javascript', 'React', 'Next.js', 'Vue.js', 'Typescript', 'Node.js'];
+  
+  const setData = {
     labels,
     datasets: [
       {
         label: 'Level',
-        data: [9,9,9,9,8,6,5,7,9,9],
+        data,
         // backgroundColor: 'rgba(0, 0, 0, 0.7)',
         backgroundColor: 'rgba(255, 231, 108, 0.5)',
       },
     ],
-};
-
-
-const ChartComp = () => {
+  };
+  
   return (
     <div className={styles.chart_container}>
-      <Bar options={options} data={data} />
+      <Bar options={options} data={setData} />
     </div>
   );
 };

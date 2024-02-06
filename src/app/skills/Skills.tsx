@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import styles from './Skills.module.scss'
 import Heading from '../../components/Heading'
 import ChartComp from '../../components/ChartComp'
+import { TechList, DesignList } from './SkillList'
+import { designData, frontData, serverData } from './ChartData'
 
 const Skills = () => {
 
@@ -27,26 +29,112 @@ const Skills = () => {
               </h2>
               <ul>
                 {/* 반복 */}
-                <li>
-                  <h3 className={styles.cat}>
-                    <span>프레임워크</span>
-                  </h3>
-                  <ul className={styles.list}>
-                    {/* 반복 */}
-                    <li>
-                      <button className={styles.btn}>
-                        <span>React</span>
-                      </button>
-                    </li>
-                  </ul>
-                </li>
+                {
+                  TechList.map((item, idx) => {
+                    const { title, list } = item;
+                    return (      
+                      <li key={idx}>
+                        <h3 className={styles.cat}>
+                          <span>{title}</span>
+                        </h3>
+                        <ul className={styles.list}>
+                          {/* 반복 */}
+                          {
+                            list.map((item, idx) => {
+                              return (
+                                <li key={idx}>
+                                  <button className={styles.btn}>
+                                    <span>{item}</span>
+                                  </button>
+                                </li>
+                              )
+                            })
+                          }
+                        </ul>
+                      </li>
+                    )
+                  })
+                }
               </ul>
             </div>
           </div>
 
           <div className={chart ? `${styles.chart} ${styles.on}` : styles.chart}>
-            {
-              chart ? (<ChartComp />) : <></>
+            <div className={styles.grid}>
+              {
+                chart ? (
+                  <>
+                    <div className={styles.empty}></div>
+                    <div className={styles.wrap}>
+                      <ChartComp 
+                        text={frontData.text}
+                        labels={frontData.name}
+                        data={frontData.num}
+                      />
+                      <ChartComp 
+                        text={serverData.text}
+                        labels={serverData.name}
+                        data={serverData.num}
+                      />
+                    </div>
+                  </>
+                ) : <></>
+              }
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <div className={styles.null}>
+            <button onClick={()=>{setChart(!chart)}}>클릭</button>
+          </div>
+
+          <div className={styles.inner}>
+            <div className={styles.container}>
+              <h2 className={styles.title}>
+                <span>Design</span>
+              </h2>
+              <ul>
+                {/* 반복 */}
+                {
+                  DesignList.map((item, idx) => {
+                    const { title, list } = item;
+                    return (      
+                      <li key={idx}>
+                        <h3 className={styles.cat}>
+                          <span>{title}</span>
+                        </h3>
+                        <ul className={styles.list}>
+                          {/* 반복 */}
+                          {
+                            list.map((item, idx) => {
+                              return (
+                                <li key={idx}>
+                                  <button className={styles.btn}>
+                                    <span>{item}</span>
+                                  </button>
+                                </li>
+                              )
+                            })
+                          }
+                        </ul>
+                      </li>
+                    )
+                  })
+                }
+              </ul>
+            </div>
+          </div>
+
+          <div className={chart ? `${styles.chart} ${styles.on}` : styles.chart}>
+          {
+              chart ? (
+                <ChartComp 
+                  text={designData.text}
+                  labels={designData.name}
+                  data={designData.num}
+                />
+              ) : <></>
             }
           </div>
         </section>
