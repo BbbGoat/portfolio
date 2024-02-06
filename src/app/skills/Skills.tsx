@@ -127,15 +127,22 @@ const Skills = () => {
           </div>
 
           <div className={chart ? `${styles.chart} ${styles.on}` : styles.chart}>
-          {
-              chart ? (
-                <ChartComp 
-                  text={designData.text}
-                  labels={designData.name}
-                  data={designData.num}
-                />
-              ) : <></>
-            }
+            <div className={styles.grid}>
+              {
+                chart ? (
+                  <>
+                    <div className={styles.empty}></div>
+                    <div className={styles.wrap} >
+                      <ChartComp 
+                        text={designData.text}
+                        labels={designData.name}
+                        data={designData.num}
+                      />
+                    </div>
+                  </>
+                ) : <></>
+              }
+            </div>
           </div>
         </section>
       </article>

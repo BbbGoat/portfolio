@@ -10,8 +10,8 @@ const serverData = {
 }
 const designData = {
     text: 'Design 🌼',
-    name: ['Figma', 'XD', 'Photoshop', 'illustrator', 'Premiere', 'AfterEffect', 'FinalCutProX', 'DaVinCi'],
-    num: [7, 5, 9, 9, 8, 9, 6, 3],
+    name: ['Photoshop', 'illustrator', 'Figma', 'XD', 'Premiere', 'AfterEffect', 'FinalCutProX', 'DaVinCi'],
+    num: [9, 9, 7, 5, 8, 9, 6, 3],
 }
 
 

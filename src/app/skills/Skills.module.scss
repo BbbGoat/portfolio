@@ -136,6 +136,10 @@
     .wrap {
         display: flex ;
         flex-direction: row;
+        gap: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 3rem;
     }
   }
 }
