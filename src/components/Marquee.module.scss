@@ -1,7 +1,6 @@
 .marquee {
     position: relative;
     overflow: hidden;
-    // $offset: 20vw;
     --move-initial: -25%;
     --move-final: -50%;
     // --move-initial: calc(-25% + #{$offset});
@@ -13,13 +12,11 @@
         width: fit-content;
         transform: translate3d(var(--move-initial), 0, 0);
         animation: marquee 12s linear infinite;
-        // animation-play-state: running;
         // animation-play-state: paused;
         
         .marquee_item {
             display: flex;
             align-items: center;
-            // height: 6.5vw;
             opacity: 1;
             white-space: nowrap;
             overflow: visible;
