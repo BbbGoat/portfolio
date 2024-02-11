@@ -292,9 +292,12 @@
                         color: #fff;
                     }
                     span {
-                        font-size: 1.2vw;
-                        line-height: 1.5;
+                        font-size: 1.4vw;
                         width: 90%;
+                        letter-spacing: -.06vw;
+                        line-height: 1.5;
+                        text-wrap: balance;
+                        margin: 0.4vw 0 0.4vw;
                         color: #fff;
                     }
                 }
