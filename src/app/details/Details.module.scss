@@ -73,15 +73,16 @@
             }
         }
         .section2 {
-            height: 500px;
             background: #000;
+            padding-bottom: 120px;
             
             .category {
                 position: relative;
                 
                 > button {
-                    background: #000;
                     border: 0;
+                    background: #000;
+                    cursor: pointer;
                 }
                 .title {
                     position: relative;
@@ -89,6 +90,10 @@
                     padding: 1.3vw 1.6vw 1.3vw;
                     line-height: 1;
                     transition: all .2s;
+
+                    &:hover {
+                        background: #fff;
+                    }
 
                     &::after {
                         content: '';
@@ -103,11 +108,13 @@
 
                     .wrap {
                         width: 100%;
+
                         > span {
-                            align-items: center;
                             display: flex;
-                            text-align: left;
+                            align-items: center;
                             width: 100%;
+                            text-align: left;
+                            mix-blend-mode: difference;
 
                             .num {
                                 width: 17%;
@@ -131,17 +138,29 @@
                     }
                 }
                 .stack {
+                    position: relative;
                     display: flex;
                     align-items: center;
                     margin-left: 18%;
                     padding: 0.6vw 0;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        border-bottom: 1px solid #fff;
+                    }
 
                     h3 {
                         color: #fff;
                         font-size: 1.9vw;
                         letter-spacing: -.06vw;
                         line-height: 1.3;
-                        margin: 0.6vw 0 0.4vw;
+                        margin: 0.4vw 0 0.4vw;
                         width: 10%;
                     }
                     .stack_list {
@@ -157,20 +176,20 @@
                             }
 
                             button {
+                                position: relative;
                                 border: 0;
                                 border-radius: 1.2vw;
-                                overflow: hidden;
                                 padding: 0.02vw;
-                                position: relative;
                                 background: #000;
+                                overflow: hidden;
 
                                 &::before {
                                     content: '';
                                     position: absolute;
                                     height: 0;
-                                    left: -1px;
-                                    right: -1px;
-                                    bottom: -1px;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
                                     background: #fff;
                                     transition: .3s cubic-bezier(.23,1,.32,1);
                                 }
@@ -182,8 +201,8 @@
 
                                     a {
                                         display: inline-block;
-                                        font-size: 1.19047619047619vw;
-                                        padding: 0.24vw 0.7vw 0.2vw;
+                                        font-size: 1.2vw;
+                                        padding: 0.2vw 0.7vw 0.2vw;
                                         color: #fff;
                                         mix-blend-mode: difference;
                                     }
@@ -193,10 +212,91 @@
                     }
                 }
                 .snap {
+                    position: relative;
+                    margin-left: 18%;
+                    padding: 0.6vw 0;
 
+                    h3 {
+                        color: #fff;
+                        font-size: 1.9vw;
+                        width: 10%;
+                        letter-spacing: -.06vw;
+                        line-height: 1.3;
+                        margin: 0.4vw 0 0.4vw;
+                    }
+                    .img_list {
+                        ul {
+                            list-style: none;
+
+                            li:nth-child(3n+1) {
+                                clear: both;
+                            }
+                            li.item {
+                                float: left;
+                                padding: 0 1vw 3vw;
+                                width: calc(100% / 3);
+                                color: #fff;
+                                
+                                &.type1 {
+                                    margin-top: 3vw;
+                                }
+                                &.type2 {
+                                    margin-top: 20vw;
+                                }
+                                &.type3 {
+                                    margin-top: 6vw;
+                                }
+                                
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
                 }
                 .desc {
+                    position: relative;
+                    clear: both;
+                    display: flex;
+                    margin-left: 18%;
+                    padding: 0.6vw 0;
 
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        border-top: 1px solid #fff;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        border-bottom: 1px solid #fff;
+                    }
+                    h3 {
+                        font-size: 1.9vw;
+                        width: 10%;
+                        letter-spacing: -.06vw;
+                        line-height: 1.3;
+                        margin: 0.4vw 0 0.4vw;
+                        color: #fff;
+                    }
+                    span {
+                        font-size: 1.2vw;
+                        line-height: 1.5;
+                        width: 90%;
+                        color: #fff;
+                    }
                 }
             }   
         }

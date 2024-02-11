@@ -78,8 +78,37 @@ const Details = () => {
             </div>
             <div className={styles.snap}>
               <h3>Snap</h3>
-              <div>
-                <img src="" alt="이미지" />
+              <div className={styles.img_list}>
+                <ul>
+                  {/* 반복 */}
+                  <li className={`${styles.item} ${styles.type1}`}>
+                    <div>
+                      <img src="/images/mok1.jpg" alt="" />
+                    </div>
+                  </li>
+                  <li className={`${styles.item} ${styles.type2}`}>
+                    <div>
+                      <img src="/images/mok2.jpg" alt="" />
+                    </div>
+                  </li>
+                  <li className={`${styles.item} ${styles.type3}`}>
+                    <div>
+                      <img src="/images/mok3.jpg" alt="" />
+                    </div>
+                  </li>
+                  <li className={`${styles.item} ${styles.type1}`}>
+                    <img src="/images/mok4.jpg" alt="" />
+                  </li>
+                  <li className={`${styles.item} ${styles.type2}`}>
+                    <img src="/images/mok1.jpg" alt="" />
+                  </li>
+                  <li className={`${styles.item} ${styles.type3}`}>
+                    <img src="/images/mok2.jpg" alt="" />
+                  </li>
+                  <li className={`${styles.item} ${styles.type1}`}>
+                    <img src="/images/mok2.jpg" alt="" />
+                  </li>
+                </ul>
               </div>
             </div>
             <div className={styles.desc}>
