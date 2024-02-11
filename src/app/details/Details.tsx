@@ -39,7 +39,7 @@ const Details = () => {
           </div>
         </section>
         <section className={styles.section2}>
-          <div className={styles.category}>
+          <div className={styles.content}>
             <button className={styles.title}>
               <div className={styles.wrap}>
                 <span>
@@ -117,6 +117,16 @@ const Details = () => {
             </div>
           </div>
         </section>
+        <div className={styles.bottom}>
+          <div className={styles.next}>
+              <a href="">
+            <div className={styles.inner}>
+                <span className={styles.txt}>Next Project</span>
+                <span className={styles.icon}>go</span>
+            </div>
+              </a>
+          </div>
+        </div>
       </div>
     </article>
   );
