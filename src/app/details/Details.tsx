@@ -14,7 +14,7 @@ const Details = () => {
             <h2>
               <span>CJ 그룹</span>
             </h2>
-            <div>
+            <div className={styles.sub}>
               <span>portfolio</span>
             </div>
             <div className={styles.p_box}>
@@ -32,18 +32,18 @@ const Details = () => {
               </p>
             </div>
           </div>
-          <div className={styles.video}>
-            <div>
-              <video src=""></video>
+          <div className={styles.video_box}>
+            <div className={styles.video}>
+              <video src="/images/project_1.mp4"></video>
             </div>
           </div>
         </section>
         <section className={styles.section2}>
           <div className={styles.category}>
             <button className={styles.title}>
-              <div>
+              <div className={styles.wrap}>
                 <span>
-                  <span>(01)</span>
+                  <span className={styles.num}>(01)</span>
                   <h2>
                     <span className={styles.txt}>
                       Creative

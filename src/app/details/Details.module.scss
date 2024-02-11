@@ -1,22 +1,134 @@
 .details {
-    padding: 0 3rem;
 
     .wrap {
+        
+        
         .section1 {
+            position: relative;
+            padding: 0 3rem;
+            overflow: hidden;
+            
             .text_box {
+                padding-top: 4.9vw;
+                position: absolute;
+                width: 100%;
+                z-index: 1;
 
+                h2 {
+                    span {
+                        display: block;
+                        font-size: 6.6vw;
+                        letter-spacing: -.2vw;
+                        line-height: 1.2;
+                        // margin-top: -0.86vw;
+                    }
+                }
+                .sub {
+                    display: block;
+                    margin-top: 0.35vw;
+                    overflow: hidden;
+                    span {
+                        font-size: 1.3vw;
+                    }
+                }
                 .p_box {
+                    font-size: 1.3vw;
+                    text-align: right;
+                    margin: 0.9vw 8.2vw 0 0;
 
+                    span {
+                        font-weight: 600;
+                        line-height: 1.6;
+                    }
                 }
             }
-            .video {
+            .video_box {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding-top: 46%;
+                background-color: #eee;
 
+                .video {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+
+                    video {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        // width: ;
+                        height: 56vw;
+                        min-width: 100%;
+                        min-height: 100%;
+                        box-sizing: border-box;
+                        transform: translate(-50%,-50%);
+                        -webkit-transform: translate(-50%,-50%);
+                    }
+                }
             }
         }
         .section2 {
+            height: 500px;
+            background-color: #fff;
+            
             .category {
+                position: relative;
+                
+                > button {
+                    background: #000;
+                    border: 0;
+                }
                 .title {
+                    position: relative;
+                    width: 100%;
+                    padding: 1.3vw 1.6vw 1.3vw;
+                    line-height: 1;
+                    transition: all .2s;
 
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        border-bottom: 1px solid #fff;
+                    }
+
+                    .wrap {
+                        width: 100%;
+                        > span {
+                            align-items: center;
+                            display: flex;
+                            text-align: left;
+                            width: 100%;
+
+                            .num {
+                                width: 17%;
+                                font-size: 3vw;
+                                color: #fff;
+                            }
+                            > h2 {
+                                position: relative;
+                                width: 83%;
+                                letter-spacing: -.1vw;
+                                .txt {
+                                    display: inline-block;
+                                    font-size: 4.6vw;
+                                    line-height: 1.1;
+                                    position: relative;
+                                    width: 100%;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
                 }
                 .stack {
 
@@ -25,7 +137,7 @@
 
                 }
                 .desc {
-                    
+
                 }
             }   
         }
