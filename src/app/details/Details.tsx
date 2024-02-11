@@ -65,6 +65,15 @@ const Details = () => {
                     </span>
                   </button>
                 </li>
+                <li>
+                  <button>
+                    <span>
+                      <a href="">
+                        React
+                      </a>
+                    </span>
+                  </button>
+                </li>
               </ul>
             </div>
             <div className={styles.snap}>
