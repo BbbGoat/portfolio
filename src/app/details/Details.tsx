@@ -44,7 +44,7 @@ const Details = () => {
         <section className={styles.section2}>
           <div className={styles.content}>
             <button className={styles.title}>
-              <div className={styles.wrap}>
+              <div className={styles.wrap} onClick={()=>{}}>
                 <span>
                   <span className={styles.num}>(01)</span>
                   <h2>
@@ -56,7 +56,7 @@ const Details = () => {
               </div>
             </button>
             <div className={styles.stack}>
-              <h3>Filter</h3>
+              <h3>Tech</h3>
               <ul className={styles.stack_list}>
                 {/* 반복 */}
                 <li>
