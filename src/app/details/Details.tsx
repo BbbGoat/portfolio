@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./Details.module.scss";
+import { useParams } from "react-router-dom";
 
 const Details = () => {
+  const { id } = useParams();
+  
   return (
     <article className={styles.details}>
       <div className={styles.wrap}>
@@ -34,7 +37,7 @@ const Details = () => {
           </div>
           <div className={styles.video_box}>
             <div className={styles.video}>
-              <video src="/images/project_1.mp4"></video>
+              <video src={`/images/project_${id}.mp4`}></video>
             </div>
           </div>
         </section>

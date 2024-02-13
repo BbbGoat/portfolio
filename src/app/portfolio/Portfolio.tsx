@@ -51,7 +51,7 @@ const Portfolio = () => {
               
               return (
                 <div className={styles.sub_tab} key={id}>
-                  <Link to={url} target='_blank'>
+                  <Link to={`/details/${id}`}>
                     <div className={styles.text_box}>
                       <div className={`${styles.flex} ${styles.move_ani}`}>
                         <p>(0{id})</p>
@@ -91,7 +91,7 @@ const Portfolio = () => {
         </div>
       </section>
       {/* 디자인 */}
-      <section className={styles.content}>
+      {/* <section className={styles.content}>
         <div className={styles.container}>
           <div className={styles.main_tab}>
             <div className={styles.text_box}>
@@ -100,9 +100,9 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* 영상 */}
-      <section className={styles.content}>
+      {/* <section className={styles.content}>
         <div className={styles.container}>
           <div className={styles.main_tab}>
             <div className={styles.text_box}>
@@ -111,7 +111,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </article>
   )
 }
