@@ -7,19 +7,21 @@ import { BrowserRouter } from 'react-router-dom';
 import Providers from './redux/provider';
 import Header from './layouts/header/Header';
 import Footer from './layouts/footer/Footer';
+import ToastProvider from './components/ToastProvider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Providers>
+    {/* <Providers> */}
       <BrowserRouter>
+        <ToastProvider />
         <Header />
         <App />
         <Footer />
       </BrowserRouter>
-    </Providers>
+    {/* </Providers> */}
   </React.StrictMode>
 );
 

@@ -1,0 +1,16 @@
+import React from 'react'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+
+const ToastProvider = () => {
+  return (
+    <ToastContainer 
+        autoClose={2000}
+        closeOnClick
+        newestOnTop
+        style={{fontSize:'1.2rem'}}
+    />
+  )
+}
+
+export default ToastProvider

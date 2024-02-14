@@ -2,8 +2,15 @@ import React from "react";
 import styles from "./Footer.module.scss";
 import { AiFillGithub } from "react-icons/ai";
 import { SiVelog } from "react-icons/si";
+import { toast } from "react-toastify";
 
 const Footer = () => {
+
+  const handleCopy = () => {
+    window.navigator.clipboard.writeText('oomi9421@gmail.com');
+    toast.info('이메일을 clipboard에 복사했습니다.')
+  }
+  
   return (
     <>
       <footer className={styles.footer}>
@@ -16,7 +23,7 @@ const Footer = () => {
               </div>
               <div className={styles.text_box}>
                 <p>Mail.</p>
-                <div>
+                <div onClick={()=>handleCopy()}>
                   <span>oomi9421@gmail.com</span>
                 </div>
               </div>
