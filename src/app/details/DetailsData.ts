@@ -7,7 +7,7 @@ const DetailsData = [
       "새로운 경험을 창출하는 의미있는 순간과 감도있는^라이프스타일을 통해 긍정적인 이슈들을 만듭니다.^이런 새로운 비즈니스들을 통해 지속가능하고^좋은 경제에 대한 새로운 기준을 만들고 있습니다.",
     name: "CJ 그룹",
     stack: ["HTML5", "CSS3", "Javascript"],
-    img: ['/images/mok1.jpg','/images/mok2.jpg','/images/mok3.jpg', '/images/mok4.jpg','/images/mok1.jpg'],
+    img: ['/images/mok1.jpg','/images/mok2.jpg','/images/mok3.jpg', '/images/mok4.jpg','/images/mok1.jpg','/images/mok1.jpg'],
     desc: 'desc sdakljf fjkwkemv m kljfwelkf mklwfm welfm mewlk mjfwmlef wefkmf me ewkmlf mkwewfm weklfmwle mwlekfm wlkfm welmf lwex.dfvjiojui3qwmk xc  wemf xcjfow memlkvmweoimv w lsd fowe jfwaf jwem xcjvnopiwa wej fsdji vwoie jvkcxvlxzkjopwieur jcxnv weijdsf sfweiof ckxjxlisuejr,szdz;zaslksdjdswmw  eemmeme sososemem sosoem,w, ememe me nwev',
     url: "https://bbbgoat.github.io/FED-PJ-WBS-SAEM/CJ/index.html",
   },

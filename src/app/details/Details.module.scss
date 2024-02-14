@@ -237,14 +237,15 @@
                                 width: calc(100% / 3);
                                 color: #fff;
                                 
-                                &.type1 {
+                                
+                                &.type:nth-child(3n-2) {
                                     margin-top: 3vw;
                                 }
-                                &.type2 {
+                                &.type:nth-child(3n-1) {
                                     margin-top: 20vw;
                                 }
-                                &.type3 {
-                                    margin-top: 6vw;
+                                &.type:nth-child(3n) {
+                                    margin-top: 9vw;
                                 }
                                 
                                 img {

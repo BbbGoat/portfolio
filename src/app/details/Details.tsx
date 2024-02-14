@@ -2,11 +2,16 @@ import React, { useEffect, useState } from "react";
 import styles from "./Details.module.scss";
 import { useParams } from "react-router-dom";
 import DetailsData from "./DetailsData";
+import classNames from "classnames";
 
 const Details = () => {
 
   const { id } = useParams();
   const data = DetailsData[Number(id) - 1];
+
+  const [count, setCount] = useState(0);
+
+  
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
@@ -88,17 +93,15 @@ const Details = () => {
                 <ul>
                   {/* 반복 */}
                   {
-                    data.img.map((url,idx,val)=>{
-                      
-                      let num = 0;
-                      
-                      for (let i = 1; i < 4; i++) {
-                        num = i;
-                        const res = ``;
-                      }
+                    data.img.map((url,idx)=>{
+
                       return (
-                        <li className={`${styles.item} ${styles.type1}`} key={idx}>
-                          {idx}
+                        <li 
+                          className={classNames(styles.item, styles.type)}
+                          key={idx}
+                        >
+                          {idx+1}
+                          !!!
                           <img src={url} alt="미리보기 이미지" />
                         </li>
                       )
