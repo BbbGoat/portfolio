@@ -100,8 +100,6 @@ const Details = () => {
                           className={classNames(styles.item, styles.type)}
                           key={idx}
                         >
-                          {idx+1}
-                          !!!
                           <img src={url} alt="미리보기 이미지" />
                         </li>
                       )
