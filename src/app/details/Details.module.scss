@@ -236,10 +236,11 @@
                                 padding: 0 1.5vw 3vw;
                                 width: calc(100% / 3);
                                 color: #fff;
+                                transition: all .2s;
                                 
                                 
                                 &.type {
-                                    margin-top: 3vw;
+                                    margin-top: 2vw;
                                 }
                                 &.type:nth-child(3n-1) {
                                     margin-top: 20vw;
