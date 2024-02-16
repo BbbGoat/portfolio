@@ -11,7 +11,7 @@ const Details = () => {
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-
+    
   }
   
   return (
@@ -51,17 +51,19 @@ const Details = () => {
         </section>
         <section className={styles.section2}>
           <div className={styles.content}>
-            <button className={styles.title} onClick={(e)=>{handleClick(e)}}>
-              <div className={styles.wrap}>
-                <span>
-                  <span className={styles.num}>(0{data.id})</span>
-                  <h2>
-                    <span className={styles.txt}>
-                      {data.name}
-                    </span>
-                  </h2>
-                </span>
-              </div>
+            <button className={styles.title}>
+              <a href={data.url} target="_blank">
+                <div className={styles.wrap}>
+                  <span>
+                    <span className={styles.num}>(0{data.id})</span>
+                    <h2>
+                      <span className={styles.txt}>
+                        {data.name}
+                      </span>
+                    </h2>
+                  </span>
+                </div>
+              </a>
             </button>
             <div className={styles.stack}>
               <h3>Tech</h3>
@@ -72,7 +74,7 @@ const Details = () => {
                       <li key={idx}>
                         <button>
                           <span>
-                            <a href="">
+                            <a href="#" onClick={(e)=>e.preventDefault()}>
                               {list}
                             </a>
                           </span>
@@ -113,20 +115,22 @@ const Details = () => {
         </section>
         <div className={styles.bottom}>
           <div className={styles.next}>
-              <a href="">
-            <div className={styles.inner}>
-                <span className={styles.txt}>Prev Project</span>
-                <span className={styles.icon}>go</span>
-            </div>
-              </a>
+            {/* 이동 기능 구현 */}
+            <a href="#">
+              <div className={styles.inner}>
+                  <span className={styles.txt}>Prev Project</span>
+                  <span className={styles.icon}>go</span>
+              </div>
+            </a>
           </div>
           <div className={styles.next}>
-              <a href="">
-            <div className={styles.inner}>
-                <span className={styles.txt}>Next Project</span>
-                <span className={styles.icon}>go</span>
-            </div>
-              </a>
+            {/* 이동 기능 구현 */}
+            <a href="#">
+              <div className={styles.inner}>
+                  <span className={styles.txt}>Next Project</span>
+                  <span className={styles.icon}>go</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>

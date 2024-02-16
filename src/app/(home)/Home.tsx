@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Home.module.scss'
 import Marquee from '../../components/Marquee'
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
 
@@ -10,10 +11,8 @@ export default function Home() {
     setVidUrl(vidName);
   }
 
-  // 확인용 구간 ///////////////
-  useEffect(()=>{
-    console.log(vidUrl)
-  }, [vidUrl])
+  const navigate = useNavigate();
+
   
   return (
     <section className={styles.home}>
@@ -93,24 +92,28 @@ export default function Home() {
               <div className={styles.circle} 
                 onMouseEnter={()=>{handleEnter('vid1')}}
                 onMouseLeave={()=>setVidUrl('')}
+                onClick={()=>navigate('/details/1')}
               >
                 <div className={styles.circle_inner}></div>
               </div>
               <div className={styles.circle} 
                 onMouseEnter={()=>{handleEnter('vid2')}}
                 onMouseLeave={()=>setVidUrl('')}
+                onClick={()=>navigate('/details/2')}
               >
                 <div className={styles.circle_inner}></div>
               </div>
               <div className={styles.circle}
                 onMouseEnter={()=>{handleEnter('vid3')}}
                 onMouseLeave={()=>setVidUrl('')} 
+                onClick={()=>navigate('/details/3')}
               >
                 <div className={styles.circle_inner}></div>
               </div>
               <div className={styles.circle}
                 onMouseEnter={()=>{handleEnter('vid4')}}
                 onMouseLeave={()=>setVidUrl('')}
+                onClick={()=>navigate('/details/4')}
               >
                 <div className={styles.circle_inner}></div>
               </div>
