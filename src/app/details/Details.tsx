@@ -51,19 +51,17 @@ const Details = () => {
         </section>
         <section className={styles.section2}>
           <div className={styles.content}>
-            <button className={styles.title}>
-              <a href={data.url} target="_blank">
-                <div className={styles.wrap}>
-                  <span>
-                    <span className={styles.num}>(0{data.id})</span>
-                    <h2>
-                      <span className={styles.txt}>
-                        {data.name}
-                      </span>
-                    </h2>
-                  </span>
-                </div>
-              </a>
+            <button className={styles.title} onClick={()=>window.open(data.url)}>
+              <div className={styles.wrap}>
+                <span>
+                  <span className={styles.num}>(0{data.id})</span>
+                  <h2>
+                    <span className={styles.txt}>
+                      {data.name}
+                    </span>
+                  </h2>
+                </span>
+              </div>
             </button>
             <div className={styles.stack}>
               <h3>Tech</h3>
