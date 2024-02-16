@@ -2,7 +2,33 @@ import React from 'react'
 import styles from './Portfolio.module.scss'
 import Heading from '../../components/Heading'
 import { Link } from 'react-router-dom'
-import DetailsData from '../details/DetailsData'
+
+const projectList = [
+  {
+    id: 1,
+    order: '1st Portfolio',
+    name: 'CJ 그룹',
+    stack: 'HTML5 / CSS3 / Javascript',
+  },
+  {
+    id: 2,
+    order: '2nd Portfolio',
+    name: 'Aesop',
+    stack: 'Vue.js / Vuex / Javscript / JQuery',
+  },
+  {
+    id: 3,
+    order: '3rd Portfolio',
+    name: 'Studio App',
+    stack: 'React / Redux / three.js / Javascript / JQuery ',
+  },
+  {
+    id: 4,
+    order: '4th Portfolio',
+    name: 'Dcode Shop',
+    stack: 'Next.js / Typescript / Firebase / Vercel',
+  },
+]
 
 const Portfolio = () => {
   return (
@@ -20,8 +46,8 @@ const Portfolio = () => {
             </div>
           </div>
           {
-            DetailsData.sort((a,b)=> b.id - a.id).map((item)=>{
-              const { id, name, url, stack } = item;
+            projectList.sort((a,b)=> b.id - a.id).map((item)=>{
+              const { id, name, stack } = item;
               
               return (
                 <div className={styles.sub_tab} key={id}>

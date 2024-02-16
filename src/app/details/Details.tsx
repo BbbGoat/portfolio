@@ -9,11 +9,6 @@ const Details = () => {
   const { id } = useParams();
   const data = DetailsData[Number(id) - 1];
 
-  const [count, setCount] = useState(0);
-
-  console.log(id, data)
-  
-
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
