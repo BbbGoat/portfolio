@@ -11,6 +11,7 @@ const Details = () => {
 
   const [count, setCount] = useState(0);
 
+  console.log(id, data)
   
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
